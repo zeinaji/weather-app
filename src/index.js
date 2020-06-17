@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./components/app";
-import { location } from "./data/forecast.json";
+import { location, forecasts } from "./data/forecast.json";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App location={location} />
+    <App location={location} forecasts={forecasts} />
   </React.StrictMode>,
   document.getElementById("root")
 );
