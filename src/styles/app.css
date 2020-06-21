@@ -1,4 +1,61 @@
 .forecast {
-  margin-left: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0px;
+  font-family: "Balsamiq Sans", cursive;
+  padding-left: 0px;
+}
+
+.error-message {
+  margin: auto;
+  font-family: "Balsamiq Sans", cursive;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .forecast {
+    display: flex;
+    flex-direction: column;
+  }
+  .location-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .location-details {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-right: 80px;
+  }
+  h1 {
+    align-self: center;
+    text-align: center;
+  }
+
+  .search-form {
+    width: 50%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .search-button {
+    margin-top: 5px;
+    align-self: center;
+    width: 40%;
+    margin-bottom: 50px;
+  }
+  .forecast-summary {
+    text-align: center;
+  }
 }
