@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForecastDetails renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+    style="display: flex; width: 100%; justify-content: center;"
+  >
+    <div
+      style="display: flex; flex-direction: column;"
+    >
+      <div
+        class="date-details"
+        data-testid="date-id"
+      >
+        <span
+          style="font-size: 50px;"
+        >
+          Mon 30th Apr
+        </span>
+      </div>
+      <div
+        class="max-temperature"
+        data-testid="max-temperature-id"
+        style="font-size: 25px;"
+      >
+        Max temperature: 
+        <span
+          style="opacity: 0.5;"
+        >
+          11°c
+        </span>
+      </div>
+      <div
+        class="min-temperature"
+        data-testid="min-temperature-id"
+        style="font-size: 25px;"
+      >
+        Min temperature: 
+        <span
+          style="opacity: 0.5;"
+        >
+           6°c
+        </span>
+      </div>
+      <div
+        class="humidity"
+        data-testid="humidity"
+        style="font-size: 25px;"
+      >
+        Humidity: 
+        <span
+          style="opacity: 0.5;"
+        >
+          50
+        </span>
+      </div>
+      <div
+        class="wind-speed"
+        data-testid="wind-speed"
+        style="font-size: 25px;"
+      >
+        Wind speed: 
+        <span
+          style="opacity: 0.5;"
+        >
+          12
+        </span>
+      </div>
+      <div
+        class="wind-direction"
+        data-testid="wind-direction"
+        style="font-size: 25px;"
+      >
+        Wind direction: 
+        <span
+          style="opacity: 0.5;"
+        >
+           mockDirection
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

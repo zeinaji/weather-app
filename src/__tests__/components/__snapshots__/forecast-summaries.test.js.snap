@@ -6,81 +6,95 @@ exports[`ForecastSummaries renders correctly to match ForecastSummaries snapshot
     class="forecast-summaries"
   >
     <div
-      class="date"
-      data-testid="date-id"
+      class="forecast-summary"
+      style="padding: 5px 5px 5px 5px;"
     >
-      <span>
-        Thu 1st Jan
-      </span>
+      <div
+        class="date"
+        data-testid="date-id"
+      >
+        <span>
+          Thu 1st Jan
+        </span>
+      </div>
+      <div
+        class="icon"
+        data-testid="800"
+      >
+        <span>
+          <i
+            class="wi wi-day-sunny"
+            name="owm"
+          />
+        </span>
+      </div>
+      <div
+        class="temperature"
+        data-testid="temperature-id"
+      >
+        <span>
+          999°c
+        </span>
+      </div>
+      <div
+        class="description"
+        data-testid="description-id"
+      >
+        <span>
+          date1
+        </span>
+      </div>
+      <button
+        style="font-family: Balsamiq Sans, cursive; border-radius: 5px; border: 0.5px solid rgb(53, 51, 51); cursor: pointer; color: rgb(53, 51, 51);"
+      >
+        More Details
+      </button>
     </div>
     <div
-      class="temperature"
-      data-testid="temperature-id"
+      class="forecast-summary"
+      style="padding: 5px 5px 5px 5px;"
     >
-      <span>
-        999°c
-      </span>
+      <div
+        class="date"
+        data-testid="date-id"
+      >
+        <span>
+          Thu 1st Jan
+        </span>
+      </div>
+      <div
+        class="icon"
+        data-testid="800"
+      >
+        <span>
+          <i
+            class="wi wi-day-sunny"
+            name="owm"
+          />
+        </span>
+      </div>
+      <div
+        class="temperature"
+        data-testid="temperature-id"
+      >
+        <span>
+          777°c
+        </span>
+      </div>
+      <div
+        class="description"
+        data-testid="description-id"
+      >
+        <span>
+          date2
+        </span>
+      </div>
+      <button
+        style="font-family: Balsamiq Sans, cursive; border-radius: 5px; border: 0.5px solid rgb(53, 51, 51); cursor: pointer; color: rgb(53, 51, 51);"
+      >
+        More Details
+      </button>
     </div>
-    <div
-      class="description"
-      data-testid="description-id"
-    >
-      <span>
-        date1
-      </span>
-    </div>
-    <div
-      class="icon"
-      data-testid="800"
-    >
-      <span>
-        <i
-          class="wi wi-day-sunny"
-          name="owm"
-        />
-      </span>
-    </div>
-    <button>
-      More Details
-    </button>
-    <div
-      class="date"
-      data-testid="date-id"
-    >
-      <span>
-        Thu 1st Jan
-      </span>
-    </div>
-    <div
-      class="temperature"
-      data-testid="temperature-id"
-    >
-      <span>
-        777°c
-      </span>
-    </div>
-    <div
-      class="description"
-      data-testid="description-id"
-    >
-      <span>
-        date2
-      </span>
-    </div>
-    <div
-      class="icon"
-      data-testid="800"
-    >
-      <span>
-        <i
-          class="wi wi-day-sunny"
-          name="owm"
-        />
-      </span>
-    </div>
-    <button>
-      More Details
-    </button>
   </div>
 </DocumentFragment>
 `;
