@@ -8,7 +8,9 @@ import SearchForm from "./search-form";
 import ErrorMessage from "./error-message";
 
 const App = () => {
+  const [loading, setLoading] = useState(false);
   const [forecasts, setForecasts] = useState([]);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [location, setLocation] = useState({
     city: "",
     country: "",
@@ -17,15 +19,23 @@ const App = () => {
 
   useEffect(() => {
     const city = location.city;
-    axios
-      .get(`https://mcr-codes-weather.herokuapp.com/forecast?city=${city}`)
-      .then((response) => {
+    const fetchProduct = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(
+          `https://mcr-codes-weather.herokuapp.com/forecast?city=${city}`
+        );
+
+        console.log(loading);
         setForecasts(response.data.forecasts);
         setLocation({ city: response.data.location.city, country: "UK" });
-      })
-      .catch((error) => {
+      } catch (error) {
         setErrorMessage(error.message);
-      });
+      }
+      setLoading(false);
+      console.log(loading);
+    };
+    fetchProduct();
   }, [errorMessage]);
 
   const [selectedDate, setSelectedDate] = useState(0);
@@ -35,21 +45,34 @@ const App = () => {
 
   const handleForecastSelect = (date) => {
     setSelectedDate(date);
+    setModalIsOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalIsOpen(false);
   };
 
   const handleSubmit = (city) => {
-    axios
-      .get(`https://mcr-codes-weather.herokuapp.com/forecast?city=${city}`)
-      .then((response) => {
+    const fetchProduct = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(
+          `https://mcr-codes-weather.herokuapp.com/forecast?city=${city}`
+        );
+
         setForecasts(response.data.forecasts);
         setLocation({ city: response.data.location.city, country: "UK" });
-      })
-      .catch((error) => {
+      } catch (error) {
         setErrorMessage(error.message);
-      });
+      }
+      setLoading(false);
+    };
+    fetchProduct();
   };
 
-  if (!errorMessage) {
+  if (loading) {
+    return <h1 className="loading">Loading...</h1>;
+  } else if (!errorMessage) {
     return (
       <div className="forecast">
         <div
@@ -62,11 +85,18 @@ const App = () => {
 
           {location.city && <SearchForm handleSubmit={handleSubmit} />}
         </div>
+
         <ForecastSummaries
           forecasts={forecasts}
           onForecastSelect={handleForecastSelect}
         />
-        {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
+        {selectedForecast && (
+          <ForecastDetails
+            forecast={selectedForecast}
+            openModal={modalIsOpen}
+            closeModal={handleCloseModal}
+          />
+        )}
       </div>
     );
   } else {

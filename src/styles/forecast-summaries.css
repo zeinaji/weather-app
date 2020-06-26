@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .forecast-summaries {
     display: flex;
     flex-direction: column;
