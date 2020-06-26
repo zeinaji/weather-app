@@ -38,7 +38,7 @@ describe("ForecastDetails", () => {
     const minTemp = getByText(/6/);
     expect(minTemp.closest("div")).toHaveClass("min-temperature");
 
-    const windSpeed = getByText("12");
+    const windSpeed = getByText(/12/);
     expect(windSpeed.closest("div")).toHaveClass("wind-speed");
 
     const windDirection = getByText("mockDirection");

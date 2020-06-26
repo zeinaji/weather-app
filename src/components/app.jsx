@@ -6,6 +6,7 @@ import ForecastDetails from "./forecast-details";
 import axios from "axios";
 import SearchForm from "./search-form";
 import ErrorMessage from "./error-message";
+import ReactModal from "./modal";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -91,7 +92,7 @@ const App = () => {
           onForecastSelect={handleForecastSelect}
         />
         {selectedForecast && (
-          <ForecastDetails
+          <ReactModal
             forecast={selectedForecast}
             openModal={modalIsOpen}
             closeModal={handleCloseModal}
