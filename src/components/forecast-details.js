@@ -5,32 +5,6 @@ import PropTypes from "prop-types";
 //import Modal from "react-modal";
 
 const ForecastDetails = ({ forecast }) => {
-  /* Modal.setAppElement("body");
-  return (
-    // <div className="modal">
-    <Modal
-      isOpen={openModal}
-      onRequestClose={closeModal}
-      style={{
-        overlay: {
-          backgroundColor: "transparent",
-          fontFamily: "Balsamiq Sans, cursive",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        },
-        content: {
-          textAlign: "center",
-          border: "3px solid rgb(53, 51, 51)",
-          borderRadius: "20px",
-          position: "relative",
-          padding: "50px",
-          left: "4px",
-          bottom: "0px",
-          right: "0px",
-        },
-      }}
-    > */
   return (
     <div className="wrapper">
       <div className="date-details" data-testid="date-id">

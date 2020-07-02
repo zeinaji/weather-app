@@ -7,5 +7,7 @@ it("renders the correct city and location props", () => {
     <ErrorMessage message="This is an error message" />
   );
 
-  expect(getByText("This is an error message")).toHaveClass("message-element");
+  expect(getByText("Sorry this location does not exist.")).toHaveClass(
+    "message-element"
+  );
 });

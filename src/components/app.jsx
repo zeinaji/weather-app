@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import LocationDetails from "./location-details";
 import ForecastSummaries from "./forecast-summaries";
 import "../styles/app.css";
-import ForecastDetails from "./forecast-details";
 import axios from "axios";
 import SearchForm from "./search-form";
 import ErrorMessage from "./error-message";
@@ -27,14 +26,12 @@ const App = () => {
           `https://mcr-codes-weather.herokuapp.com/forecast?city=${city}`
         );
 
-        console.log(loading);
         setForecasts(response.data.forecasts);
         setLocation({ city: response.data.location.city, country: "UK" });
       } catch (error) {
         setErrorMessage(error.message);
       }
       setLoading(false);
-      console.log(loading);
     };
     fetchProduct();
   }, [errorMessage]);

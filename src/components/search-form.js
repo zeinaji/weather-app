@@ -7,11 +7,18 @@ class SearchForm extends React.Component {
       searchText: "",
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
   handleInputChange(e) {
     this.setState({ searchText: e.target.value });
   }
+
+  handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      this.props.handleSubmit(this.state.searchText);
+    }
+  };
 
   render() {
     return (
@@ -25,6 +32,7 @@ class SearchForm extends React.Component {
           type="text"
           onChange={this.handleInputChange}
           value={this.searchState}
+          onKeyPress={this.handleKeyPress}
           style={{
             borderRadius: "5px",
             border: "0.5px solid rgb(53, 51, 51)",
