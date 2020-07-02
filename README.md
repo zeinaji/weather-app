@@ -15,7 +15,7 @@ This was bootstrapped with [Create React App](https://github.com/facebook/create
 
 ## Packages used 
 
-These included: PropTypes, axios, react-icons-weather, moment and react-modal.
+These included: prop-types, axios, react-icons-weather, moment and react-modal.
 
 
 
