@@ -34,7 +34,7 @@ const App = () => {
       setLoading(false);
     };
     fetchProduct();
-  }, [errorMessage]);
+  }, []);
 
   const [selectedDate, setSelectedDate] = useState(0);
   const selectedForecast = forecasts.find(
