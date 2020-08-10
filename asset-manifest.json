@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/weather-app/static/css/main.c9e4c8be.chunk.css",
-    "main.js": "/weather-app/static/js/main.62a4dbf4.chunk.js",
-    "main.js.map": "/weather-app/static/js/main.62a4dbf4.chunk.js.map",
+    "main.css": "/weather-app/static/css/main.40d98711.chunk.css",
+    "main.js": "/weather-app/static/js/main.94923c7f.chunk.js",
+    "main.js.map": "/weather-app/static/js/main.94923c7f.chunk.js.map",
     "runtime-main.js": "/weather-app/static/js/runtime-main.c90f5b59.js",
     "runtime-main.js.map": "/weather-app/static/js/runtime-main.c90f5b59.js.map",
     "static/css/2.66e30163.chunk.css": "/weather-app/static/css/2.66e30163.chunk.css",
-    "static/js/2.132a9ca4.chunk.js": "/weather-app/static/js/2.132a9ca4.chunk.js",
-    "static/js/2.132a9ca4.chunk.js.map": "/weather-app/static/js/2.132a9ca4.chunk.js.map",
+    "static/js/2.dcc9c498.chunk.js": "/weather-app/static/js/2.dcc9c498.chunk.js",
+    "static/js/2.dcc9c498.chunk.js.map": "/weather-app/static/js/2.dcc9c498.chunk.js.map",
     "index.html": "/weather-app/index.html",
-    "precache-manifest.34aadfc4cca8406cf0f885a74e5db427.js": "/weather-app/precache-manifest.34aadfc4cca8406cf0f885a74e5db427.js",
+    "precache-manifest.959a8f3615b8d647eef6b3eb55580c8b.js": "/weather-app/precache-manifest.959a8f3615b8d647eef6b3eb55580c8b.js",
     "service-worker.js": "/weather-app/service-worker.js",
     "static/css/2.66e30163.chunk.css.map": "/weather-app/static/css/2.66e30163.chunk.css.map",
-    "static/css/main.c9e4c8be.chunk.css.map": "/weather-app/static/css/main.c9e4c8be.chunk.css.map",
-    "static/js/2.132a9ca4.chunk.js.LICENSE.txt": "/weather-app/static/js/2.132a9ca4.chunk.js.LICENSE.txt",
+    "static/css/main.40d98711.chunk.css.map": "/weather-app/static/css/main.40d98711.chunk.css.map",
+    "static/js/2.dcc9c498.chunk.js.LICENSE.txt": "/weather-app/static/js/2.dcc9c498.chunk.js.LICENSE.txt",
     "static/media/weather-icons.css": "/weather-app/static/media/weathericons-regular-webfont.ecaf8b48.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c90f5b59.js",
     "static/css/2.66e30163.chunk.css",
-    "static/js/2.132a9ca4.chunk.js",
-    "static/css/main.c9e4c8be.chunk.css",
-    "static/js/main.62a4dbf4.chunk.js"
+    "static/js/2.dcc9c498.chunk.js",
+    "static/css/main.40d98711.chunk.css",
+    "static/js/main.94923c7f.chunk.js"
   ]
 }
