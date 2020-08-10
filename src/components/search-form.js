@@ -36,6 +36,7 @@ class SearchForm extends React.Component {
           style={{
             borderRadius: "5px",
             border: "0.5px solid rgb(53, 51, 51)",
+            paddingLeft: "5px",
           }}
         />
 
