@@ -4,7 +4,6 @@
   padding-left: 0px;
 }
 
-.error-message,
 .loading {
   margin: auto;
   font-family: "Balsamiq Sans", cursive;
@@ -35,6 +34,21 @@ button:focus {
   font-size: 30px;
   margin: 10px;
   margin-left: 0;
+}
+
+.error-message {
+  display: flex;
+  flex-direction: column;
+  font-family: "Balsamiq Sans", cursive;
+  height: 50vh;
+  justify-content: space-between;
+}
+
+.refresh {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: black;
+  font-size: 30px;
 }
 
 @media (max-width: 920px) {

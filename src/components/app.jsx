@@ -6,6 +6,8 @@ import axios from "axios";
 import SearchForm from "./search-form";
 import ErrorMessage from "./error-message";
 import ReactModal from "./modal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUndo } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -68,6 +70,10 @@ const App = () => {
     fetchProduct();
   };
 
+  const refreshPage = () => {
+    window.location.reload(false);
+  };
+
   if (loading) {
     return <h1 className="loading">Loading...</h1>;
   } else if (!errorMessage) {
@@ -100,6 +106,9 @@ const App = () => {
   } else {
     return (
       <div className="error-message">
+        <a className="refresh" onClick={refreshPage} href="#">
+          <FontAwesomeIcon className="undo" icon={faUndo} />
+        </a>
         <ErrorMessage message={errorMessage} />
       </div>
     );

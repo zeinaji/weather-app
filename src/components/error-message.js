@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/error-message.css";
 
 const ErrorMessage = ({ message }) => {
   if ((message = "Request failed with status code 404")) {
