@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="search-form"
+    style="margin: 25px 25px 0px 0px;"
+  >
+    <input
+      style="border-radius: 5px; border: 0.5px solid rgb(53, 51, 51);"
+      type="text"
+      value=""
+    />
+    <button
+      class="search-button"
+      style="font-family: Balsamiq Sans, cursive; border-radius: 5px; border: 0.5px solid rgb(53, 51, 51); margin-left: 3px; cursor: pointer; color: rgb(53, 51, 51);"
+    >
+      Search
+    </button>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForecastSummary renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="forecast-summary"
+    style="padding: 5px 5px 5px 5px;"
+  >
+    <div
+      class="date"
+      data-testid="date-id"
+    >
+      <span>
+        Mon 30th Apr
+      </span>
+    </div>
+    <div
+      class="icon"
+      data-testid="800"
+    >
+      <span>
+        <i
+          class="wi wi-day-sunny"
+          name="owm"
+        />
+      </span>
+    </div>
+    <div
+      class="temperature"
+      data-testid="temperature-id"
+    >
+      <span>
+        11°c
+      </span>
+    </div>
+    <div
+      class="description"
+      data-testid="description-id"
+    >
+      <span>
+        mockDescription
+      </span>
+    </div>
+    <button
+      style="font-family: Balsamiq Sans, cursive; border-radius: 5px; border: 0.5px solid rgb(53, 51, 51); cursor: pointer; color: rgb(53, 51, 51);"
+    >
+      More Details
+    </button>
+  </div>
+</DocumentFragment>
+`;
